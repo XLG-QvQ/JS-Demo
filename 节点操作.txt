@@ -1,0 +1,11 @@
+<!-- 节点操作 -->
+        <!-- nodeType（节点类型）、 nodeNaame（节点名称）、nodeValue（节点值）(元素节点nodeType为 1、属性节点nodeType为 2、文本节点nodeType 为 3（文字、空格、换行等）)
+        1、 获取元素通常使用两种方式
+        1. 利用 DOM 提供的方法获取元素（逻辑性不强、繁琐，只要需要用到的标签都要获取到）
+         document.getElementsByTagName()
+         document.getElementById()
+         document.querySelector()
+
+        2. 利用节点层级关系获取元素（逻辑性强，但是兼容性稍差）
+        （1）利用父子兄节点关系获取元素
+     -->
