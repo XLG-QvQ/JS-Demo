@@ -1,0 +1,18 @@
+    <!-- 操作节点之字节点 -->
+    <!-- 
+        1. 子节点 parentNode.childNodes (标准)
+        2. 返回包含指定节点的子节点的集合，该集合为即时更新的集合
+        注意：返回值里面包含了所有的子节点，包括元素节点、文本节点等。
+        如果只想获取得到里面的元素节点，则需要专门处理。所以我们一般不提倡使用 childNodes  可以通过for循环遍历出需要的子节点
+        3.  parentNode.children（非标准） （得到各大浏览器的支持 可放心使用 实际开发常用）
+        重要： parentNode.children：是一个只读属性，返回所有的子元素节点。它只返回子元素节点，其余节点不返回（★）
+     -->
+
+注意：parentNode.childNodes 
+        // 通过 for 循环变量出需要的子节点
+        for (var i = 0 ;i < ul[0].length; i++) {
+            if (ul[0].length[i].nodeType == 1) {
+                // ul[0].childNodes[i] 是元素节点
+                console.log(ul[0].childNodes[i]);
+            }
+        }
