@@ -1,0 +1,12 @@
+    <!-- 节点操作之第一个子元素和最后一个子元素 -->
+    <!-- 
+        1. 第一个子节点      parentNode.firstChild  返回第一个子节点，找不到则返回null, 同样，也是包含所有的节点。
+        2. 最后一个子节点   parentNode.lastChild   返回最后一个子节点
+        3. 返回第一个子元素节点       parentNode.firstElementChild   (兼容性 IE9 以上支持)
+        4. 返回最后一个子元素节点    parentNode.lastElementChild    (兼容性 IE9 以上支持)
+
+        实际开发中,解决 firstChild 和 lastChild 包含其他节点,操作不方便,而 firstElementChild 和 lastElementChild 又有兼容性.
+        解决方案:
+            第一个的写法:   console.log(ol.children[0]);获取全部的li 然后第一个
+            最后一个的写法: console.log(ol.children[ol.children.length - 1]);
+    -->
