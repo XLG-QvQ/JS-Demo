@@ -1,0 +1,8 @@
+        <!-- 删除留言案例 -->
+        <!-- 
+            案例分析
+            1. 当我们把文本域里面的值赋值给 li 的时候，多添加一个删除的链接
+            2. 需要把所有的链接获取过来，当我们点击当前的链接的时候，删除当前链接所在的 li
+            3. 阻止链接跳转需要加 javascript:void(0); 或者 javascript:;
+         -->
+//   node.removeChild(child); 删除的是 li 当前 a 所在的 li this.parentNode;
