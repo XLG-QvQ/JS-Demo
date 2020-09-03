@@ -1,0 +1,35 @@
+    <!-- 
+    DOM ：指的是文档对象模型，是 W3C 组织推荐的处理可扩展标记语言（HTML 或者 XML）的标准编程接口。
+    1. 创建
+    (1) document.write
+    (2) element.innerHTML
+    (3) document.createElement()
+
+    2. 增
+    (1) appendChild
+    (2) inserBefore
+
+    3. 删
+    (1) removeChild
+
+    4. 改
+    (1) 修改元素属性： src、 href 、 title等
+    (2) 修改普通元素内容: innerHTML 、innerText
+    (3) 修改表单元素: value 、 type 、disabled等
+    (4) 修改元素样式：style 、className 
+
+    5. 查
+    主要获取查询 dom的元素
+    (1) DOM 提供的API 方法：getElementById 、getElementsByTagName 等古老用法不太推荐
+    (2) H5 提供的新方法： querySelector 、querySelectorAll) 推荐使用
+    (3) 利用节点操作获取元素： 父(parentNode) 、子(children) 、兄(previousElementSibling) 、nextElemenSibling）推荐使用
+        
+    6. 属性操作
+    主要针对于自定义属性
+    (1) setAttribute：设置 dom的属性值
+    (2) getAttribute：得到 dom的属性值
+    (3) removeAttribute：移除属性
+
+    7. 事件操作
+    鼠标事件
+-->

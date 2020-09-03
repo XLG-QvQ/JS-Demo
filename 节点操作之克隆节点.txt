@@ -1,0 +1,8 @@
+<!-- 节点操作之克隆节点 -->
+    <!-- 
+        1. node.cloneNode()
+        node.cloneNode() 方法返回调用该方法的节点的一个副本。也称为克隆节点/拷贝节点
+        注意：
+        1. node.cloneNode(false); 括号为 空或者里面是false    	 浅拷贝  只复制标签不复制里面的内容。
+        2. node.cloneNode(true); 括号为 true               		 深拷贝  复制标签和里面的内容。
+     -->

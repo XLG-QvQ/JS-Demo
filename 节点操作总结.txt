@@ -1,0 +1,36 @@
+<!-- 节点操作总结 -->
+1、节点操作
+    1. nodeType（节点类型）、 nodeNaame（节点名称）、nodeValue（节点值）(元素节点nodeType为 1、属性节点nodeType为 2、文本节点nodeType 为 3（文字、空格、换行等）)
+    2. 利用节点层级关系获取元素（逻辑性强，但是兼容性稍差）
+
+2、 父、子、兄节点（★）
+    1. 父节点（★）：parentNode			属性可返回某个节点的父节点，注意是最近的一个父节点。如果指定的节点没有父节点则返回 null
+    2. 子节点（★）：parentNode.children（非标准）	返回所有的子元素节点。它只返回子元素节点，其余节点不返回
+    3. 兄弟节点：      node.nextSibling  			返回当前元素的下一个兄弟节点，找不到则返回null。 同样，也是包含所有的节点。
+    4. 兄弟节点：      node.previousSibling    		返回当前元素的上一个兄弟节点，找不到则返回null。 同样，也是包含所有的节点。
+    5. 兄弟节点： 	node.nextElementSibling 		返回当前元素的下一个兄弟元素节点，找不到则返回null。 (兼容性问题 IE9 以上才支持)
+    6. 兄弟节点：	node.previousElementSibling  	返回当前元素的上一个兄弟元素节点，找不到则返回null。 (兼容性问题 IE9 以上才支持)
+
+3、创建和添加节点（★）
+    1. 创建元素节点：document.createElement('tagName')		创建节点（★）
+	tagName 指定的HTML元素。因为这些元素原先不存在，是根据我们需求动态生成的，所以我们也称为动态创建元素节点。
+
+    2. 添加节点：node.appendChild(child)			添加节点（后 after ）（★）	node 父级   Child 子级 
+	将一个节点添加到指定父节点的子节点末尾
+
+    3. 添加节点：node.insertBefore(child,指定元素)   		添加节点（前 before  ）	node 父级   Child 子级 
+	将一个节点添加到父节点的指定子节点前面。
+
+    4. 我们想要页面添加一个新的元素：1. 创建元素  2. 赋值给元素  3. 添加元素
+
+    5. 修改元素内容：element.innerHTML			修改内容（★）
+	可以改变元素内容 HTML 从起始位置到终止位置的全部内容，包括html标签，同时保留空格和换行（ 可通过innerHTML的方法给创建的元素赋值 ）
+
+    6. 克隆节点： node.cloneNode()				克隆节点
+	node.cloneNode() 方法返回调用该方法的节点的一个副本。也称为克隆节点/拷贝节点。（括号为 空或者里面是false 浅拷贝  只复制标签不复制里面的内容。括号为 true  深拷贝  复制标签和里面的内容。）
+
+    7. 删除节点： node.removeChild(Child)  			删除节点（★）
+	从 DOM 中删除一个子节点，返回删除的节点。
+
+    8. 第一个子元素：node.children[0]
+    9.最后一个子元素：node.children[node.children.length - 1]
